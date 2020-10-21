@@ -3,8 +3,7 @@
         Button b = GameObject.Find("Button").GetComponent<Button>();
         b.onClick.AddListener(delegate () { GetItem(1); });
     }
-
-    private void TestEv()
+    public Item GetItem(int id)
     {
-        Debug.Log("sdasdas");
+        return items.Find(item => item.id == id);
     }
