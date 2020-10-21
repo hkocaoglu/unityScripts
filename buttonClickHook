@@ -1,0 +1,10 @@
+    private void Start()
+    {
+        Button b = GameObject.Find("Button").GetComponent<Button>();
+        b.onClick.AddListener(delegate () { GetItem(1); });
+    }
+
+    private void TestEv()
+    {
+        Debug.Log("sdasdas");
+    }
